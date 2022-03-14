@@ -1,47 +1,4 @@
-/* TEMPLATE & STYLING */
 
-li {
-    display: inline;
-    color: whitesmoke;
-}
-
-.left-nav {
-    float: left;
-}
-
-li:hover {
-    border-width: 3vw;
-    border-color: whitesmoke;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-}
-
-nav {
-    grid-area: nav;
-    background-color: black;
-    height: 5vh;
-    margin-bottom: 2vh;
-    padding-top: 1vh;
-}
-
-.right-nav {
-    display: inline;
-    float: right;
-    margin-right: 2vw;
-}
-
-footer {
-    background-color: black;
-    margin-top: 3%;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-}
-
-span {
-    color: aliceblue;
-}
-
-
-/* ************************************************ */
 
 .container {
     display: grid;
@@ -90,6 +47,7 @@ span {
     background-size: cover;
     opacity: 0.8;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    margin-bottom: 5%;
 }
 
 .mini-carousel1:hover {
@@ -99,6 +57,8 @@ span {
 .mini-carousel2 {
     grid-area: mini-carousel2;
     background-color: blue;
+    margin-bottom: 5%;
+
     border-radius: 5px;
     background-image: url("/CROWN\ website/Raw Sites/IMAGES/crwn.jpg");
     background-repeat: no-repeat;
@@ -118,6 +78,8 @@ span {
 .mini-carousel3 {
     grid-area: mini-carousel3;
     background-color: darkgoldenrod;
+    margin-bottom: 5%;
+
     border-radius: 5px;
     background-image: url("/CROWN\ website/Raw Sites/IMAGES/crwn.jpg");
     background-repeat: no-repeat;

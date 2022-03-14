@@ -1,0 +1,48 @@
+/* TEMPLATE & STYLING */
+
+li {
+    display: inline;
+    color: whitesmoke;
+}
+
+.left-nav {
+    float: left;
+}
+
+li:hover {
+    border-width: 3vw;
+    border-color: whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+nav {
+    grid-area: nav;
+    background-color: black;
+    height: 5vh;
+    margin-bottom: 3vh;
+    padding-top: 2vh;
+    padding-bottom: 7vh;
+}
+
+.right-nav {
+    display: inline;
+    float: right;
+    margin-right: 2vw;
+}
+
+footer {
+    background-color: black;
+    margin-top: 10vh;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+position: fixed;
+bottom: 0;
+width: 100%;
+}
+
+span {
+    color: aliceblue;
+}
+
+
+/* ************************************************ */
