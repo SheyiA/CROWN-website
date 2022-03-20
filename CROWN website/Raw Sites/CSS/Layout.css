@@ -21,7 +21,7 @@ nav {
     height: 5vh;
     margin-bottom: 3vh;
     padding-top: 2vh;
-    padding-bottom: 7vh;
+    padding-bottom: 5vh;
 }
 
 .right-nav {
@@ -35,9 +35,9 @@ footer {
     margin-top: 10vh;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-position: fixed;
-bottom: 0;
-width: 100%;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 span {
