@@ -1,6 +1,6 @@
 .container {
     display: grid;
-    height: 100vh;
+    height: fit-content;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 0.5fr;
     grid-template-areas: "carousel carousel carousel";
@@ -9,7 +9,7 @@
     grid-area: Container;
 }
 
-.Shirt-Title{
+.Shirt-Title {
     margin: 0;
 }
 
@@ -40,7 +40,8 @@
     background-color: aqua;
 }
 
-.mini-carousel1 {
+
+/* .mini-carousel1 {
     grid-area: mini-carousel1;
     background-color: yellow;
     border-radius: 5px;
@@ -54,13 +55,15 @@
     opacity: 0.8;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
     margin-bottom: 5%;
-}
+} */
 
-.mini-carousel1:hover {
+
+/* .mini-carousel1:hover {
     opacity: 1;
-}
+} */
 
-.mini-carousel2 {
+
+/* .mini-carousel2 {
     grid-area: mini-carousel2;
     background-color: blue;
     margin-bottom: 5%;
@@ -78,9 +81,10 @@
 
 .mini-carousel2:hover {
     opacity: 1;
-}
+} */
 
-.mini-carousel3 {
+
+/* .mini-carousel3 {
     grid-area: mini-carousel3;
     background-color: darkgoldenrod;
     margin-bottom: 5%;
@@ -98,7 +102,7 @@
 
 .mini-carousel3:hover {
     opacity: 1;
-}
+} */
 
 img {
     width: 100%;
@@ -113,10 +117,13 @@ hr {
 .container2 {
     /* background-color: blue; */
     display: grid;
-    grid-template-columns: 30vw 30vw 1fr;
+    grid-template-columns: 25vw 30vw 30vw;
     grid-template-rows: 20vh 70vh;
     grid-template-areas: "TStore TStore TStore" "Limage Cbutton Rimage";
     grid-area: Cont2;
+    height: fit-content;
+    width: fit-content;
+    margin: auto;
 }
 
 .left-cont-image {
@@ -219,13 +226,17 @@ h1 {
 }
 
 .container3 {
-    background-color: chartreuse;
     margin-top: 10%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "im1 im2 im3 im4 im5 im6 im7 im8 im9 im10";
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 30vw 15vh;
+    grid-gap: 5vh;
+    grid-template-areas: "im1 im1 im1 im1 im1 im1 im1 im1 im1" "im2 im3 im4 im5 im6 im7 im8 im9 im10";
     grid-area: Cont3;
+    width: 60%;
+    margin: auto;
+    margin-top: 15%;
+    margin-bottom: 20vh;
 }
 
 .im1 {
@@ -302,16 +313,13 @@ h1 {
         grid-area: Cont2;
         grid-gap: 20vh;
     }
-
-    .title-store{
+    .title-store {
         margin-top: 30vh;
     }
-
-    .Shirt-Title{
+    .Shirt-Title {
         margin: 0;
     }
-
-    .cont-button{
+    .cont-button {
         display: inline-block;
     }
     .btn-checkout {
@@ -327,7 +335,6 @@ h1 {
         font-size: 1.5em;
         font-family: Arial, Helvetica, sans-serif;
     }
-
     .container {
         display: grid;
         height: 100vh;
@@ -344,15 +351,13 @@ h1 {
         margin: 5%;
     }
     .container3 {
-        background-color: chartreuse;
         margin-top: 10%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 50vh 10vh;
-        grid-template-areas: "im1" "im2 im3 im4 im5 im6 im7 im8 im9 im11";
+        grid-template-rows: 50vh 15vh;
+        grid-template-areas: "im1 im1 im1 im1 im1 im1 im1 im1 im1" "im2 im3 im4 im5 im6 im7 im8 im9 im11";
         grid-area: Cont3;
     }
-
     /* .size-form{
         float: left;
         
