@@ -294,7 +294,7 @@ h1 {
 } */
 
 @media only screen and (max-width: 800px) {
-    body {
+    .All-container {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 10vh 50vh 1fr 1fr;
@@ -307,8 +307,8 @@ h1 {
         /* background-color: blue; */
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 30vh 50vh 15vh 80vh;
-        grid-template-areas: "TStore" "Limage" "Cbutton" "Rimage";
+        grid-template-rows: 30vh 50vh 15vh;
+        grid-template-areas: "TStore" "Limage" "Cbutton";
         grid-gap: 3vh;
         grid-area: Cont2;
         grid-gap: 20vh;

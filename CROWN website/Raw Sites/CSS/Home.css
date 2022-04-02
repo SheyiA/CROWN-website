@@ -1,0 +1,120 @@
+nav {
+    background-color: aqua;
+    grid-area: nav;
+}
+
+.content-container {
+    background-color: blueviolet;
+    grid-area: CC;
+    margin: auto;
+    width: 50%;
+}
+
+.white-t {
+    grid-area: t;
+}
+
+.left-cont-image {
+    grid-area: LCI;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20fr 5vh;
+    grid-template-areas: "t" "picker";
+    grid-gap: 5%;
+}
+
+.choose {
+    background-color: darkgrey;
+    grid-area: choose;
+}
+
+.right-cont-image {
+    background-color: darkmagenta;
+    grid-area: RCI;
+}
+
+#store {
+    background-color: dodgerblue;
+    grid-area: Stitle;
+}
+
+.color-picker {
+    display: grid;
+    grid-template-columns: 5vh 5vh 5vh 5vh 5vh 5vh 5vh;
+    grid-template-rows: 5vh;
+    grid-template-areas: "col1 col2 col3 col4 col5 col6 col7";
+    grid-area: picker;
+    grid-gap: 5%;
+    justify-content: center;
+}
+
+.color1 {
+    background-color: black;
+    grid-area: col1;
+}
+
+.color2 {
+    background-color: blue;
+    grid-area: col2;
+}
+
+.color3 {
+    background-color: chartreuse;
+    grid-area: col3;
+}
+
+.color4 {
+    background-color: crimson;
+    grid-area: col4;
+}
+
+.color5 {
+    background-color: grey;
+    grid-area: col5;
+}
+
+.color6 {
+    background-color: indigo;
+    grid-area: col6;
+}
+
+.color7 {
+    background-color: navy;
+    grid-area: col7;
+}
+
+.container2 {
+    grid-area: C2;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "Stitle Stitle Stitle" "LCI choose RCI";
+    grid-gap: 5%;
+}
+
+.choose {
+    background-color: chartreuse;
+    grid-area: choose;
+}
+
+.container3 {
+    background-color: darkgray;
+    grid-area: C3;
+}
+
+footer {
+    background-color: red;
+    grid-area: footer;
+}
+
+#caro-img {
+    width: 50vw;
+}
+
+.All-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 10vh 1fr 10vh 1fr 1fr 1fr;
+    grid-template-areas: "nav nav nav nav" "CC CC CC CC" "C2 C2 C2 C2" "choose choose choose choose" "C3 C3 C3 C3" "footer footer footer footer";
+}
