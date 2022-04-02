@@ -1,10 +1,9 @@
 nav {
-    background-color: aqua;
+    background-color: black;
     grid-area: nav;
 }
 
 .content-container {
-    background-color: blueviolet;
     grid-area: CC;
     margin: auto;
     width: 50%;
@@ -28,13 +27,8 @@ nav {
     grid-area: choose;
 }
 
-.right-cont-image {
-    background-color: darkmagenta;
-    grid-area: RCI;
-}
 
 #store {
-    background-color: dodgerblue;
     grid-area: Stitle;
 }
 
@@ -87,9 +81,9 @@ nav {
     grid-area: C2;
     text-align: center;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: "Stitle Stitle Stitle" "LCI choose RCI";
+    grid-template-areas: "Stitle Stitle" "LCI choose";
     grid-gap: 5%;
 }
 
@@ -99,12 +93,60 @@ nav {
 }
 
 .container3 {
-    background-color: darkgray;
+    margin: auto;
+    width: 75%;
     grid-area: C3;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50vh 20vh;
+    grid-template-areas: "im1 im1 im1 im1 im1 im1 im1 im1 im1" "im2 im3 im4 im5 im6 im7 im8 im9 im10";
+    grid-gap: 2%;
 }
 
+.im1{
+    background-color: aqua;
+    grid-area: im1;
+}
+.im2{
+    background-color: chartreuse;
+    grid-area: im2;
+}
+.im3{
+    background-color: darkgreen;
+    grid-area: im3;
+}
+.im4{
+    background-color: deepskyblue;
+    grid-area: im4;
+}
+.im5{
+    background-color: darkgoldenrod;
+    grid-area: im5;
+}
+.im6{
+    background-color: brown;
+    grid-area: im6;
+}
+.im7{
+    background-color: cadetblue;
+    grid-area: im7;
+}
+.im8{
+    background-color:darkkhaki;
+    grid-area: im8;
+}
+.im9{
+    background-color: darkviolet;
+    grid-area: im9;
+}
+.im10{
+    background-color: yellow;
+    grid-area: im10;
+}
+
+
 footer {
-    background-color: red;
+    background-color: black;
     grid-area: footer;
 }
 
@@ -118,3 +160,48 @@ footer {
     grid-template-rows: 10vh 1fr 10vh 1fr 1fr 1fr;
     grid-template-areas: "nav nav nav nav" "CC CC CC CC" "C2 C2 C2 C2" "choose choose choose choose" "C3 C3 C3 C3" "footer footer footer footer";
 }
+
+@media (max-width: 650px) and (min-width: 200px) {
+    .All-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 10vh 50vh 60vh 1fr 1fr;
+        grid-area: "nav" "CC" "C2" "choose" "C3" "footer";
+    }
+
+    nav{
+        padding-bottom: 7vh;
+    }
+
+.container2{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "Stitle" "LCI" "choose";
+    grid-gap: 5%;
+}
+
+}
+
+@media (max-width:350px){
+    .right-nav{
+    display: none;    
+}
+}
+
+
+@media (min-width: 650px) {
+    nav{
+        padding-bottom: 8vh;
+    }
+}
+
+@media (min-width: 1100px) {
+    nav{
+        padding-bottom: 6vh;
+    }
+}
+
+
+
+
