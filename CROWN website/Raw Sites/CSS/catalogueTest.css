@@ -72,6 +72,16 @@ footer {
     nav {
         min-height: 52px;
     }
+    .contact-bubble {
+        width: 50%;
+        margin: auto;
+        gap: 5vw;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "FC" "SC";
+        background-color: rgb(243, 241, 241);
+    }
 }
 
 @media screen and (max-height: 530px) {
@@ -84,4 +94,44 @@ footer {
         grid-template-rows: 20vh 1fr 10vh;
         grid-template-areas: "nav" "Container" "foot";
     }
+    .contact-bubble {
+        width: 50%;
+        margin: auto;
+        gap: 5vw;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "FC" "SC" !important;
+        background-color: rgb(243, 241, 241);
+    }
+}
+
+h2 {
+    text-align: center;
+}
+
+.contact-bubble {
+    width: 50%;
+    margin: auto;
+    gap: 5vw;
+    display: grid;
+    grid-template-columns: 20vw 20vw;
+    grid-template-areas: "FC SC";
+    background-color: rgb(243, 241, 241);
+}
+
+#circleOne {
+    border-radius: 70% !important;
+    -webkit-border-radius: 70% !important;
+    -moz-border-radius: 70% !important;
+    -ms-border-radius: 70% !important;
+    -o-border-radius: 70% !important;
+}
+
+.firstCircle {
+    grid-area: FC;
+}
+
+.secondCircle {
+    grid-area: SC;
 }
