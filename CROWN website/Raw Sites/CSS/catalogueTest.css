@@ -328,3 +328,53 @@ body {
 .billing {
     background-color: red;
 }
+
+.item-one{
+    background-color: rgb(191, 191, 191);
+    max-width: 21.9vw;
+    margin-left: 25%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    text-align: center;
+}
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(2, 30vw);
+    justify-content: center;
+    align-items: center;
+}
+.shirt-desc {
+    text-align: center;
+    color: white;
+}
+
+.dot {
+    padding: 5%;
+    background-color: white;
+    border-radius: 50%;
+    color: lightblue;
+    justify-content: center;
+    align-items: center;
+  }
+
+.dots {
+      width: 100%;
+      margin: auto;
+      grid-template-columns: repeat(4, 1fr);
+  }
+
+  .bt{
+      width: 100%;
+      margin: auto;
+  }
+
+  .amount{
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      outline: none;
+      background-color: rgb(191, 191, 191);
+      text-align: center;
+      max-width: 10vw;
+      
+  }
