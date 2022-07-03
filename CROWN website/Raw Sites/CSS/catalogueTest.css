@@ -17,6 +17,10 @@
     min-width: 75%;
 }
 
+nav {
+    width: 100%;
+}
+
 .carousel {
     grid-area: carousel;
 }
@@ -329,9 +333,9 @@ body {
     background-color: red;
 }
 
-.item-one{
+.item-one {
     background-color: rgb(191, 191, 191);
-    max-width: 21.9vw;
+    max-width: 300px;
     margin-left: 25%;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     text-align: center;
@@ -343,6 +347,7 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 .shirt-desc {
     text-align: center;
     color: white;
@@ -352,29 +357,67 @@ body {
     padding: 5%;
     background-color: white;
     border-radius: 50%;
-    color: lightblue;
+    color: rgb(0, 191, 255);
     justify-content: center;
     align-items: center;
-  }
+}
 
 .dots {
-      width: 100%;
-      margin: auto;
-      grid-template-columns: repeat(4, 1fr);
-  }
+    width: 100%;
+    margin: auto;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 5%;
+}
 
-  .bt{
-      width: 100%;
-      margin: auto;
-  }
+.bt {
+    width: 100%;
+    margin: auto;
+}
 
-  .amount{
-      border-top: none;
-      border-left: none;
-      border-right: none;
-      outline: none;
-      background-color: rgb(191, 191, 191);
-      text-align: center;
-      max-width: 10vw;
-      
-  }
+.amount {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    background-color: rgb(191, 191, 191);
+    text-align: center;
+    max-width: 300px;
+}
+
+.grey-out {
+    pointer-events: none;
+    opacity: 0.3;
+}
+
+::placeholder {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-style: bold;
+    color: white;
+}
+
+.person-one {
+    background-image: url('../IMAGES/beanie.png');
+}
+
+.storeT {
+    margin-bottom: 5%;
+}
+
+@media (min-width: 300px) and (max-width:1000px) {
+    html {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .meetTheTeam {
+        display: grid !important;
+        grid-template-rows: 1fr 1fr 1fr !important;
+        grid-template-columns: 1fr !important;
+        justify-content: center;
+        align-content: center;
+    }
+}
+
+.row {
+    text-align: center;
+}
