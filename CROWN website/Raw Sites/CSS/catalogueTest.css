@@ -343,7 +343,8 @@ body {
 
 .items {
     display: grid;
-    grid-template-columns: repeat(2, 30vw);
+    grid-template-columns: repeat(2, 30vw) !important;
+    grid-template-areas: "i1" "i2" !important;
     justify-content: center;
     align-items: center;
 }
@@ -410,19 +411,60 @@ body {
         grid-template-columns: 1fr 1fr 1fr;
     }
     .meetTheTeam {
-        display: grid !important;
+        /* display: grid !important;
         grid-template-rows: 1fr 1fr 1fr !important;
         grid-template-columns: 1fr !important;
         justify-content: center;
-        align-content: center;
+        align-content: center; */
+        display: inline;
     }
+    .aboutUs {
+        display: grid !important;
+        grid-template-rows: 1fr 1fr 1fr !important;
+        grid-template-areas: "p1" "p2" "p3" !important;
+        margin: auto;
+        width: 50%;
+    }
+    .items {
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "i1" "i2";
+        gap: 5%;
+    }
+}
+
+.i1 {
+    grid-area: i1;
+}
+
+.i2 {
+    grid-area: i2;
 }
 
 .row {
     text-align: center;
+    display: block;
 }
 
 .marketing {
     display: grid !important;
     grid-template-columns: 1fr 1fr 1fr !important;
+}
+
+.aboutUs {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "p1 p2 p3";
+}
+
+.personOne {
+    grid-area: p1;
+}
+
+.personTwo {
+    grid-area: p2;
+}
+
+.personThree {
+    grid-area: p3;
 }
