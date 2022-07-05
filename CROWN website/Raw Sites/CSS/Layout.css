@@ -19,7 +19,7 @@ nav {
     grid-area: nav;
     background-color: black;
     height: 5vh;
-    margin-bottom: 3vh;
+    /* margin-bottom: 3vh; */
     padding-top: 2vh;
     padding-bottom: 5vh;
 }
