@@ -28,6 +28,7 @@ nav {
     display: inline;
     float: right;
     margin-right: 2vw;
+    margin-top: -0.5%;
 }
 
 footer {
@@ -46,3 +47,8 @@ span {
 
 
 /* ************************************************ */
+
+
+/* @media screen (max-width:375px){
+        
+} */
