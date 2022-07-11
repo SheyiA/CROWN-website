@@ -467,6 +467,14 @@
             margin-top: 25%;
         }
     }
+    /* @media (min-width:625px) and (max-width: 999px) {
+        .about-Container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr) !important;
+            grid-template-areas: "p1 p2" !important;
+            grid-template-rows: 1fr 1fr !important;
+        }
+    } */
     
     .i1 {
         grid-area: i1;
@@ -507,4 +515,15 @@
     
     .persons:hover {
         opacity: 0.5;
+        transition: 0.5s ease;
+        backface-visibility: hidden;
+        -webkit-transition: 0.5s ease;
+        -moz-transition: 0.5s ease;
+        -ms-transition: 0.5s ease;
+        -o-transition: 0.5s ease;
+        -webkit-backface-visibility: hidden;
+    }
+    
+    .nSpace {
+        margin-top: -1%;
     }
