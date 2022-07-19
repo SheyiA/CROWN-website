@@ -482,6 +482,7 @@
     
     .i2 {
         grid-area: i2;
+        margin-bottom: 5%;
     }
     
     .row {
