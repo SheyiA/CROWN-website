@@ -41,3 +41,13 @@ function openStore() {
     meetTheTeam.style.visibility = 'visible';
 
 }
+
+var btn = document.getElementById('btn')
+var btn2 = document.getElementById('btn2')
+
+btn.addEventListener('click', btnAddToCart)
+btn2.addEventListener('click', btnAddToCart)
+
+function btnAddToCart() {
+    alert('Please contact Matthias to make an order!')
+}
