@@ -4,6 +4,8 @@ var myNav = document.getElementById('myNav');
 var nav = document.getElementById('nav');
 var cc = document.getElementById('cc');
 var meetTheTeam = document.getElementById('meetTheTeam');
+var overlay = document.getElementById('overlay');
+
 
 
 hamMenu.addEventListener('click', openNav)
@@ -18,6 +20,7 @@ function openNav() {
     cc.style.visibility = 'hidden';
     allCont.style.visibility = 'hidden';
     meetTheTeam.style.visibility = 'hidden';
+    hamMenu.style.visibility = 'hidden';
 
 
 
@@ -29,6 +32,8 @@ function closeNav() {
     cc.style.visibility = 'visible';
     allCont.style.visibility = 'visible';
     meetTheTeam.style.visibility = 'visible';
+    hamMenu.style.visibility = 'visible';
+
 
 
 }
@@ -39,6 +44,8 @@ function openStore() {
     cc.style.visibility = 'visible';
     allCont.style.visibility = 'visible';
     meetTheTeam.style.visibility = 'visible';
+    hamMenu.style.visibility = 'visible';
+
 
 }
 
